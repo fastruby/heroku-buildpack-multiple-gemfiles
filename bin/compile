@@ -31,6 +31,8 @@ function indent() {
   esac
 }
 
+echo "-----> Installing bundler"
+gem install bundler -v 1.17.3
 # The heroku ruby buildpack will have already installed the gems for the default Gemfile, so now
 # install the missing gems from Gemfile.next.
 echo "-----> Installing Gemfile.next gems"
